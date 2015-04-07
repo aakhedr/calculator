@@ -29,9 +29,6 @@
                                 <state key="normal" title="7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="90" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNY-nN-N8C"/>
                                 </connections>
@@ -42,9 +39,6 @@
                                 <state key="normal" title="8">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="99" y="90" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DkK-nK-Eym"/>
                                 </connections>
@@ -55,9 +49,6 @@
                                 <state key="normal" title="9">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="182" y="90" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiw-ZA-PCd"/>
                                 </connections>
@@ -68,9 +59,6 @@
                                 <state key="normal" title="4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="161" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urP-ok-p1v"/>
                                 </connections>
@@ -81,9 +69,6 @@
                                 <state key="normal" title="5">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="99" y="161" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80l-dn-lfw"/>
                                 </connections>
@@ -94,9 +79,6 @@
                                 <state key="normal" title="6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="182" y="161" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfD-6I-9oP"/>
                                 </connections>
@@ -107,9 +89,6 @@
                                 <state key="normal" title="1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="232" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrU-RN-1wB"/>
                                 </connections>
@@ -120,9 +99,6 @@
                                 <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="99" y="232" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ot4-MA-cdc"/>
                                 </connections>
@@ -133,9 +109,6 @@
                                 <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="182" y="232" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmc-tI-Adt"/>
                                 </connections>
@@ -146,19 +119,203 @@
                                 <state key="normal" title="0">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="99" y="303" width="75" height="63"/>
-                                </variation>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQ0-rM-qcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzW-d3-kFu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="⏎">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAU-o8-onb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-di-FKi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="×">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67f-d6-is0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-fc-RdO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="÷">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1SM-5s-3fC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPi-Le-M4d">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7m3-fF-Q6T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-Db-VDl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEu-8b-hZY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-K9-lqA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="×">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0C9-15-Z0G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3S-Cz-Djd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="÷">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEr-9i-WUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-7L-vCj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKV-KR-Uh9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYp-lE-pS9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="√">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oeprate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UxM-yZ-JN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydy-k6-H9k">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMU-re-oNS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="sPd-JW-Ujh" secondAttribute="height" id="08B-cI-GWf"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="ydy-k6-H9k" secondAttribute="height" id="0KI-r2-LeG"/>
+                            <constraint firstItem="D3S-Cz-Djd" firstAttribute="leading" secondItem="nZN-fc-RdO" secondAttribute="trailing" constant="8" id="0Rb-Jw-mPr"/>
+                            <constraint firstItem="1Rv-t9-V3D" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="0lf-oZ-FZy"/>
                             <constraint firstItem="DrP-zn-igU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3pm-5Y-noV"/>
+                            <constraint firstItem="ydy-k6-H9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="4kN-6A-uug"/>
+                            <constraint firstItem="pEQ-K9-lqA" firstAttribute="leading" secondItem="DHZ-di-FKi" secondAttribute="trailing" constant="8" id="6sv-Mm-FK6"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="pEQ-K9-lqA" secondAttribute="width" id="7YZ-VS-86P"/>
+                            <constraint firstItem="Pvs-N2-V7m" firstAttribute="top" secondItem="qkc-Pq-dEF" secondAttribute="bottom" constant="8" id="8FP-3i-JF9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WzW-d3-kFu" secondAttribute="bottom" constant="8" id="8WR-Ap-zzO"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="leading" secondItem="qkc-Pq-dEF" secondAttribute="trailing" constant="8" id="8i8-u0-J1Z"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="nZN-fc-RdO" secondAttribute="height" id="97o-3R-9v5"/>
+                            <constraint firstItem="QMY-e8-ttY" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="9bw-Hb-VCm"/>
+                            <constraint firstItem="WzW-d3-kFu" firstAttribute="leading" secondItem="cGK-kD-ku9" secondAttribute="trailing" constant="8" id="Ad2-BZ-702"/>
+                            <constraint firstItem="lhR-SR-Nix" firstAttribute="top" secondItem="QMY-e8-ttY" secondAttribute="bottom" constant="8" id="BK7-YE-q4X"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="qkc-Pq-dEF" secondAttribute="height" id="BQM-Zy-dmy"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="qkc-Pq-dEF" secondAttribute="width" id="BYn-dx-0RM"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="1Rv-t9-V3D" secondAttribute="height" id="C1o-i2-6UJ"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="D3S-Cz-Djd" secondAttribute="width" id="C8F-Ey-X7J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gYp-lE-pS9" secondAttribute="bottom" constant="8" id="CgO-pQ-tnR"/>
                             <constraint firstItem="DrP-zn-igU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Cl0-dY-O9Q"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="cGK-kD-ku9" secondAttribute="width" id="Csl-oZ-UDK"/>
+                            <constraint firstItem="yPi-Le-M4d" firstAttribute="top" secondItem="nZN-fc-RdO" secondAttribute="bottom" constant="8" id="D9G-N0-dZd"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="F3E-ft-9mA" secondAttribute="width" id="E61-pG-gan"/>
+                            <constraint firstItem="C7s-aV-z0q" firstAttribute="top" secondItem="1Rv-t9-V3D" secondAttribute="bottom" constant="8" id="EZa-km-7Ts"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pEQ-K9-lqA" secondAttribute="trailing" constant="8" id="Efd-xS-niA"/>
+                            <constraint firstItem="Pvs-N2-V7m" firstAttribute="leading" secondItem="lhR-SR-Nix" secondAttribute="trailing" constant="8" id="HWV-hi-Sqm"/>
+                            <constraint firstItem="lhR-SR-Nix" firstAttribute="leading" secondItem="C7s-aV-z0q" secondAttribute="trailing" constant="8" id="I09-cq-PEy"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="nZN-fc-RdO" secondAttribute="width" id="Ido-6I-d9z"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="D3S-Cz-Djd" secondAttribute="height" id="JHY-MJ-qHa"/>
+                            <constraint firstItem="hVe-7L-vCj" firstAttribute="leading" secondItem="yPi-Le-M4d" secondAttribute="trailing" constant="8" id="Jaz-o7-27w"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="lhR-SR-Nix" secondAttribute="height" id="LD4-d3-za8"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="Pvs-N2-V7m" secondAttribute="height" id="Lwj-9m-he8"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="Maj-0s-TXo" secondAttribute="height" id="MOm-Ua-urn"/>
+                            <constraint firstItem="cGK-kD-ku9" firstAttribute="leading" secondItem="ydy-k6-H9k" secondAttribute="trailing" constant="8" id="MwC-Ih-49n"/>
+                            <constraint firstItem="cGK-kD-ku9" firstAttribute="top" secondItem="F3E-ft-9mA" secondAttribute="bottom" constant="8" id="NH8-IP-7Ii"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="hVe-7L-vCj" secondAttribute="width" id="Osj-kB-09J"/>
+                            <constraint firstItem="nZN-fc-RdO" firstAttribute="top" secondItem="DHZ-di-FKi" secondAttribute="bottom" constant="8" id="PCh-mk-OLF"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="pEQ-K9-lqA" secondAttribute="height" id="PYM-Ip-TRP"/>
+                            <constraint firstItem="Maj-0s-TXo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="SbN-xa-VuJ"/>
+                            <constraint firstItem="F3E-ft-9mA" firstAttribute="top" secondItem="lhR-SR-Nix" secondAttribute="bottom" constant="8" id="Sgh-Bn-LYc"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="lhR-SR-Nix" secondAttribute="width" id="TCZ-ty-P8X"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="hVe-7L-vCj" secondAttribute="height" id="ThK-uO-ajc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hVe-7L-vCj" secondAttribute="trailing" constant="8" id="Tx8-cn-kN3"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="XoA-Db-VDl" secondAttribute="height" id="VDQ-rw-K8P"/>
                             <constraint firstItem="DrP-zn-igU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VNK-VW-SRl"/>
+                            <constraint firstItem="hVe-7L-vCj" firstAttribute="top" secondItem="D3S-Cz-Djd" secondAttribute="bottom" constant="8" id="W4t-MH-vN4"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="Maj-0s-TXo" secondAttribute="width" id="YjZ-lV-yoE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cGK-kD-ku9" secondAttribute="bottom" constant="8" id="Zam-wA-yVp"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="gYp-lE-pS9" secondAttribute="width" id="adX-NQ-43I"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="F3E-ft-9mA" secondAttribute="height" id="anV-GY-SB2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D3S-Cz-Djd" secondAttribute="trailing" constant="8" id="bTj-x1-fch"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="gYp-lE-pS9" secondAttribute="height" id="bf0-jY-aTA"/>
+                            <constraint firstItem="qkc-Pq-dEF" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="bui-dX-GGp"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="yPi-Le-M4d" secondAttribute="height" id="csX-D1-4Ka"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ydy-k6-H9k" secondAttribute="bottom" constant="8" id="esF-4p-ivI"/>
+                            <constraint firstItem="yPi-Le-M4d" firstAttribute="leading" secondItem="sPd-JW-Ujh" secondAttribute="trailing" constant="8" id="fJf-s0-vU5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XoA-Db-VDl" secondAttribute="bottom" constant="8" id="gHg-iW-Y1I"/>
+                            <constraint firstItem="sPd-JW-Ujh" firstAttribute="leading" secondItem="F3E-ft-9mA" secondAttribute="trailing" constant="8" id="gIn-h8-RID"/>
+                            <constraint firstItem="ydy-k6-H9k" firstAttribute="top" secondItem="Maj-0s-TXo" secondAttribute="bottom" constant="8" id="giO-oo-THs"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="Pvs-N2-V7m" secondAttribute="width" id="gw8-nM-fc1"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="cGK-kD-ku9" secondAttribute="height" id="hO4-N2-Yod"/>
+                            <constraint firstItem="QMY-e8-ttY" firstAttribute="leading" secondItem="1Rv-t9-V3D" secondAttribute="trailing" constant="8" id="i0r-hk-ape"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="C7s-aV-z0q" secondAttribute="height" id="i3V-0O-kW8"/>
+                            <constraint firstItem="qkc-Pq-dEF" firstAttribute="leading" secondItem="QMY-e8-ttY" secondAttribute="trailing" constant="8" id="lUG-5K-jmS"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="QMY-e8-ttY" secondAttribute="height" id="mIX-5e-O7I"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="sPd-JW-Ujh" secondAttribute="width" id="mJz-4J-q4G"/>
+                            <constraint firstItem="Maj-0s-TXo" firstAttribute="top" secondItem="C7s-aV-z0q" secondAttribute="bottom" constant="8" id="mO7-oH-pp2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gYp-lE-pS9" secondAttribute="trailing" constant="8" id="mUb-Rn-sK5"/>
+                            <constraint firstItem="sPd-JW-Ujh" firstAttribute="top" secondItem="Pvs-N2-V7m" secondAttribute="bottom" constant="8" id="mta-tF-aEv"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="XoA-Db-VDl" secondAttribute="width" id="muO-N6-EMK"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="nYP-hK-Bs6"/>
+                            <constraint firstItem="nZN-fc-RdO" firstAttribute="leading" secondItem="Pvs-N2-V7m" secondAttribute="trailing" constant="8" id="oDn-It-FFu"/>
+                            <constraint firstItem="1Rv-t9-V3D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="oEX-6b-gt3"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="WzW-d3-kFu" secondAttribute="width" id="oyN-vQ-mbo"/>
+                            <constraint firstItem="XoA-Db-VDl" firstAttribute="top" secondItem="yPi-Le-M4d" secondAttribute="bottom" constant="8" id="qZX-9F-pqe"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="C7s-aV-z0q" secondAttribute="width" id="rAr-kG-Z0s"/>
+                            <constraint firstItem="F3E-ft-9mA" firstAttribute="leading" secondItem="Maj-0s-TXo" secondAttribute="trailing" constant="8" id="sJg-EF-07x"/>
+                            <constraint firstItem="WzW-d3-kFu" firstAttribute="top" secondItem="sPd-JW-Ujh" secondAttribute="bottom" constant="8" id="uAs-UZ-X3G"/>
+                            <constraint firstItem="D3S-Cz-Djd" firstAttribute="top" secondItem="pEQ-K9-lqA" secondAttribute="bottom" constant="8" id="ujc-pM-mxG"/>
+                            <constraint firstItem="gYp-lE-pS9" firstAttribute="top" secondItem="hVe-7L-vCj" secondAttribute="bottom" constant="8" id="vxq-oN-pgD"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="WzW-d3-kFu" secondAttribute="height" id="wPy-ZC-vCq"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="yPi-Le-M4d" secondAttribute="width" id="wfg-5r-bLT"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="ydy-k6-H9k" secondAttribute="width" id="wnC-RD-5cC"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="QMY-e8-ttY" secondAttribute="width" id="ws5-JZ-vYJ"/>
+                            <constraint firstItem="pEQ-K9-lqA" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="x8S-mW-Tvb"/>
+                            <constraint firstItem="XoA-Db-VDl" firstAttribute="leading" secondItem="WzW-d3-kFu" secondAttribute="trailing" constant="8" id="yIG-FT-Tsb"/>
+                            <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="1Rv-t9-V3D" secondAttribute="width" id="z3R-Me-1A9"/>
+                            <constraint firstItem="gYp-lE-pS9" firstAttribute="leading" secondItem="XoA-Db-VDl" secondAttribute="trailing" constant="8" id="zYD-dd-KUI"/>
+                            <constraint firstItem="C7s-aV-z0q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="zmH-rg-Fcq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -172,6 +329,105 @@
                                 <exclude reference="F3E-ft-9mA"/>
                                 <exclude reference="sPd-JW-Ujh"/>
                                 <exclude reference="cGK-kD-ku9"/>
+                                <exclude reference="WzW-d3-kFu"/>
+                                <exclude reference="DHZ-di-FKi"/>
+                                <exclude reference="nZN-fc-RdO"/>
+                                <exclude reference="yPi-Le-M4d"/>
+                                <exclude reference="XoA-Db-VDl"/>
+                                <exclude reference="pEQ-K9-lqA"/>
+                                <exclude reference="D3S-Cz-Djd"/>
+                                <exclude reference="hVe-7L-vCj"/>
+                                <exclude reference="gYp-lE-pS9"/>
+                                <exclude reference="ydy-k6-H9k"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0lf-oZ-FZy"/>
+                                <exclude reference="oEX-6b-gt3"/>
+                                <exclude reference="9bw-Hb-VCm"/>
+                                <exclude reference="i0r-hk-ape"/>
+                                <exclude reference="bui-dX-GGp"/>
+                                <exclude reference="lUG-5K-jmS"/>
+                                <exclude reference="EZa-km-7Ts"/>
+                                <exclude reference="zmH-rg-Fcq"/>
+                                <exclude reference="BK7-YE-q4X"/>
+                                <exclude reference="I09-cq-PEy"/>
+                                <exclude reference="08B-cI-GWf"/>
+                                <exclude reference="0KI-r2-LeG"/>
+                                <exclude reference="7YZ-VS-86P"/>
+                                <exclude reference="8i8-u0-J1Z"/>
+                                <exclude reference="97o-3R-9v5"/>
+                                <exclude reference="BQM-Zy-dmy"/>
+                                <exclude reference="BYn-dx-0RM"/>
+                                <exclude reference="C1o-i2-6UJ"/>
+                                <exclude reference="C8F-Ey-X7J"/>
+                                <exclude reference="Csl-oZ-UDK"/>
+                                <exclude reference="E61-pG-gan"/>
+                                <exclude reference="Ido-6I-d9z"/>
+                                <exclude reference="JHY-MJ-qHa"/>
+                                <exclude reference="LD4-d3-za8"/>
+                                <exclude reference="Lwj-9m-he8"/>
+                                <exclude reference="MOm-Ua-urn"/>
+                                <exclude reference="Osj-kB-09J"/>
+                                <exclude reference="PYM-Ip-TRP"/>
+                                <exclude reference="TCZ-ty-P8X"/>
+                                <exclude reference="ThK-uO-ajc"/>
+                                <exclude reference="VDQ-rw-K8P"/>
+                                <exclude reference="YjZ-lV-yoE"/>
+                                <exclude reference="adX-NQ-43I"/>
+                                <exclude reference="anV-GY-SB2"/>
+                                <exclude reference="bf0-jY-aTA"/>
+                                <exclude reference="csX-D1-4Ka"/>
+                                <exclude reference="gw8-nM-fc1"/>
+                                <exclude reference="hO4-N2-Yod"/>
+                                <exclude reference="i3V-0O-kW8"/>
+                                <exclude reference="mIX-5e-O7I"/>
+                                <exclude reference="mJz-4J-q4G"/>
+                                <exclude reference="muO-N6-EMK"/>
+                                <exclude reference="nYP-hK-Bs6"/>
+                                <exclude reference="oyN-vQ-mbo"/>
+                                <exclude reference="rAr-kG-Z0s"/>
+                                <exclude reference="wPy-ZC-vCq"/>
+                                <exclude reference="wfg-5r-bLT"/>
+                                <exclude reference="wnC-RD-5cC"/>
+                                <exclude reference="ws5-JZ-vYJ"/>
+                                <exclude reference="z3R-Me-1A9"/>
+                                <exclude reference="8FP-3i-JF9"/>
+                                <exclude reference="HWV-hi-Sqm"/>
+                                <exclude reference="SbN-xa-VuJ"/>
+                                <exclude reference="mO7-oH-pp2"/>
+                                <exclude reference="Sgh-Bn-LYc"/>
+                                <exclude reference="sJg-EF-07x"/>
+                                <exclude reference="PCh-mk-OLF"/>
+                                <exclude reference="oDn-It-FFu"/>
+                                <exclude reference="6sv-Mm-FK6"/>
+                                <exclude reference="Efd-xS-niA"/>
+                                <exclude reference="x8S-mW-Tvb"/>
+                                <exclude reference="gIn-h8-RID"/>
+                                <exclude reference="mta-tF-aEv"/>
+                                <exclude reference="0Rb-Jw-mPr"/>
+                                <exclude reference="bTj-x1-fch"/>
+                                <exclude reference="ujc-pM-mxG"/>
+                                <exclude reference="D9G-N0-dZd"/>
+                                <exclude reference="fJf-s0-vU5"/>
+                                <exclude reference="4kN-6A-uug"/>
+                                <exclude reference="giO-oo-THs"/>
+                                <exclude reference="MwC-Ih-49n"/>
+                                <exclude reference="NH8-IP-7Ii"/>
+                                <exclude reference="Ad2-BZ-702"/>
+                                <exclude reference="uAs-UZ-X3G"/>
+                                <exclude reference="Jaz-o7-27w"/>
+                                <exclude reference="Tx8-cn-kN3"/>
+                                <exclude reference="W4t-MH-vN4"/>
+                                <exclude reference="qZX-9F-pqe"/>
+                                <exclude reference="yIG-FT-Tsb"/>
+                                <exclude reference="mUb-Rn-sK5"/>
+                                <exclude reference="vxq-oN-pgD"/>
+                                <exclude reference="zYD-dd-KUI"/>
+                                <exclude reference="8WR-Ap-zzO"/>
+                                <exclude reference="CgO-pQ-tnR"/>
+                                <exclude reference="Zam-wA-yVp"/>
+                                <exclude reference="esF-4p-ivI"/>
+                                <exclude reference="gHg-iW-Y1I"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -186,6 +442,105 @@
                                 <include reference="F3E-ft-9mA"/>
                                 <include reference="sPd-JW-Ujh"/>
                                 <include reference="cGK-kD-ku9"/>
+                                <include reference="WzW-d3-kFu"/>
+                                <include reference="DHZ-di-FKi"/>
+                                <include reference="nZN-fc-RdO"/>
+                                <include reference="yPi-Le-M4d"/>
+                                <include reference="XoA-Db-VDl"/>
+                                <include reference="pEQ-K9-lqA"/>
+                                <include reference="D3S-Cz-Djd"/>
+                                <include reference="hVe-7L-vCj"/>
+                                <include reference="gYp-lE-pS9"/>
+                                <include reference="ydy-k6-H9k"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0lf-oZ-FZy"/>
+                                <include reference="oEX-6b-gt3"/>
+                                <include reference="9bw-Hb-VCm"/>
+                                <include reference="i0r-hk-ape"/>
+                                <include reference="bui-dX-GGp"/>
+                                <include reference="lUG-5K-jmS"/>
+                                <include reference="EZa-km-7Ts"/>
+                                <include reference="zmH-rg-Fcq"/>
+                                <include reference="BK7-YE-q4X"/>
+                                <include reference="I09-cq-PEy"/>
+                                <include reference="08B-cI-GWf"/>
+                                <include reference="0KI-r2-LeG"/>
+                                <include reference="7YZ-VS-86P"/>
+                                <include reference="8i8-u0-J1Z"/>
+                                <include reference="97o-3R-9v5"/>
+                                <include reference="BQM-Zy-dmy"/>
+                                <include reference="BYn-dx-0RM"/>
+                                <include reference="C1o-i2-6UJ"/>
+                                <include reference="C8F-Ey-X7J"/>
+                                <include reference="Csl-oZ-UDK"/>
+                                <include reference="E61-pG-gan"/>
+                                <include reference="Ido-6I-d9z"/>
+                                <include reference="JHY-MJ-qHa"/>
+                                <include reference="LD4-d3-za8"/>
+                                <include reference="Lwj-9m-he8"/>
+                                <include reference="MOm-Ua-urn"/>
+                                <include reference="Osj-kB-09J"/>
+                                <include reference="PYM-Ip-TRP"/>
+                                <include reference="TCZ-ty-P8X"/>
+                                <include reference="ThK-uO-ajc"/>
+                                <include reference="VDQ-rw-K8P"/>
+                                <include reference="YjZ-lV-yoE"/>
+                                <include reference="adX-NQ-43I"/>
+                                <include reference="anV-GY-SB2"/>
+                                <include reference="bf0-jY-aTA"/>
+                                <include reference="csX-D1-4Ka"/>
+                                <include reference="gw8-nM-fc1"/>
+                                <include reference="hO4-N2-Yod"/>
+                                <include reference="i3V-0O-kW8"/>
+                                <include reference="mIX-5e-O7I"/>
+                                <include reference="mJz-4J-q4G"/>
+                                <include reference="muO-N6-EMK"/>
+                                <include reference="nYP-hK-Bs6"/>
+                                <include reference="oyN-vQ-mbo"/>
+                                <include reference="rAr-kG-Z0s"/>
+                                <include reference="wPy-ZC-vCq"/>
+                                <include reference="wfg-5r-bLT"/>
+                                <include reference="wnC-RD-5cC"/>
+                                <include reference="ws5-JZ-vYJ"/>
+                                <include reference="z3R-Me-1A9"/>
+                                <include reference="8FP-3i-JF9"/>
+                                <include reference="HWV-hi-Sqm"/>
+                                <include reference="SbN-xa-VuJ"/>
+                                <include reference="mO7-oH-pp2"/>
+                                <include reference="Sgh-Bn-LYc"/>
+                                <include reference="sJg-EF-07x"/>
+                                <include reference="PCh-mk-OLF"/>
+                                <include reference="oDn-It-FFu"/>
+                                <include reference="6sv-Mm-FK6"/>
+                                <include reference="Efd-xS-niA"/>
+                                <include reference="x8S-mW-Tvb"/>
+                                <include reference="gIn-h8-RID"/>
+                                <include reference="mta-tF-aEv"/>
+                                <include reference="0Rb-Jw-mPr"/>
+                                <include reference="bTj-x1-fch"/>
+                                <include reference="ujc-pM-mxG"/>
+                                <include reference="D9G-N0-dZd"/>
+                                <include reference="fJf-s0-vU5"/>
+                                <include reference="4kN-6A-uug"/>
+                                <include reference="giO-oo-THs"/>
+                                <include reference="MwC-Ih-49n"/>
+                                <include reference="NH8-IP-7Ii"/>
+                                <include reference="Ad2-BZ-702"/>
+                                <include reference="uAs-UZ-X3G"/>
+                                <include reference="Jaz-o7-27w"/>
+                                <include reference="Tx8-cn-kN3"/>
+                                <include reference="W4t-MH-vN4"/>
+                                <include reference="qZX-9F-pqe"/>
+                                <include reference="yIG-FT-Tsb"/>
+                                <include reference="mUb-Rn-sK5"/>
+                                <include reference="vxq-oN-pgD"/>
+                                <include reference="zYD-dd-KUI"/>
+                                <include reference="8WR-Ap-zzO"/>
+                                <include reference="CgO-pQ-tnR"/>
+                                <include reference="Zam-wA-yVp"/>
+                                <include reference="esF-4p-ivI"/>
+                                <include reference="gHg-iW-Y1I"/>
                             </mask>
                         </variation>
                     </view>
@@ -195,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="331"/>
+            <point key="canvasLocation" x="-225" y="165"/>
         </scene>
     </scenes>
 </document>
