@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
 
     var userInTheMiddleOfTypingANumber = false
-    var operandStack = Array<Double>()
     var displayValue: Double {
         get {
             return NSNumberFormatter().numberFromString(self.display.text!)!.doubleValue
@@ -23,6 +22,9 @@ class ViewController: UIViewController {
             self.userInTheMiddleOfTypingANumber = false
         }
     }
+    
+    // The model
+    var brain = CalculatorBrain()
     
     @IBAction func appendDigit(sender: UIButton) {
         if sender.currentTitle! != "." {
@@ -43,40 +45,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func oeprate(sender: UIButton) {
-        let operation = sender.currentTitle!
         if userInTheMiddleOfTypingANumber {
             enter()
         }
-        switch operation {
-            case "×": performBinaryOperation { $0 * $1 }
-            case "÷": performBinaryOperation { $1 / $0 }
-            case "+": performBinaryOperation { $0 + $1 }
-            case "-": performBinaryOperation { $1 - $0 }
-            case "√": performOperation { sqrt($0) }
-            case "sin": performOperation { sin(Double($0)) }
-            case "cos": performOperation { cos(Double($0)) }
-            default: break
-        }
-    }
-
-    func performBinaryOperation(operation: (Double, Double) -> Double) {
-        if self.operandStack.count >= 2 {
-            self.displayValue = operation(self.operandStack.removeLast(), self.operandStack.removeLast())
-            self.enter()
-        }
-    }
-    
-    func performOperation(operation: Double -> Double) {
-        if self.operandStack.count >= 1 {
-            self.displayValue = operation(operandStack.removeLast())
-            self.enter()
+        if let operation = sender.currentTitle {
+            if let result = brain.performOperation(operation) {
+                displayValue = result
+            } else {
+                // Change this for exercise 2
+                displayValue = 0
+            }
         }
     }
     
     @IBAction func enter() {
         self.userInTheMiddleOfTypingANumber = false
-        self.operandStack.append(self.displayValue)
-        println("operandStack = \(self.operandStack)")
+        if let result = brain.pushOperand(displayValue) {
+            self.displayValue = result
+        } else {
+            // This needs to be modifed later in exercise 2
+            self.displayValue = 0
+        }
     }
 }
+
+
 
