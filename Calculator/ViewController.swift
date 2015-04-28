@@ -13,14 +13,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
 
     var userInTheMiddleOfTypingANumber = false
+    var operandStack = Array<Double>()
+    var displayValue: Double {
+        get {
+            return NSNumberFormatter().numberFromString(self.display.text!)!.doubleValue
+        }
+        set {
+            self.display.text = "\(newValue)"
+            self.userInTheMiddleOfTypingANumber = false
+        }
+    }
     
     @IBAction func appendDigit(sender: UIButton) {
-        var digit = sender.currentTitle!
-        if userInTheMiddleOfTypingANumber {
-            display.text = display.text! + digit
+        if sender.currentTitle! != "." {
+            var digit = sender.currentTitle!
+            if self.userInTheMiddleOfTypingANumber {
+                self.display.text = self.display.text! + digit
+            } else {
+                self.display.text = digit
+                self.userInTheMiddleOfTypingANumber = true
+            }
         } else {
-            display.text = digit
-            userInTheMiddleOfTypingANumber = true
+            var decimal = sender.currentTitle!
+            if self.display.text!.rangeOfString(".") == nil {
+                self.display.text = self.display.text! + decimal
+                self.userInTheMiddleOfTypingANumber = true
+            }
         }
     }
 
@@ -35,40 +53,30 @@ class ViewController: UIViewController {
             case "+": performBinaryOperation { $0 + $1 }
             case "-": performBinaryOperation { $1 - $0 }
             case "√": performOperation { sqrt($0) }
+            case "sin": performOperation { sin(Double($0)) }
+            case "cos": performOperation { cos(Double($0)) }
             default: break
         }
     }
 
     func performBinaryOperation(operation: (Double, Double) -> Double) {
-        if operandStack.count >= 2 {
-            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
-            enter()
+        if self.operandStack.count >= 2 {
+            self.displayValue = operation(self.operandStack.removeLast(), self.operandStack.removeLast())
+            self.enter()
         }
     }
     
     func performOperation(operation: Double -> Double) {
-        if operandStack.count >= 1 {
-            displayValue = operation(operandStack.removeLast())
-            enter()
+        if self.operandStack.count >= 1 {
+            self.displayValue = operation(operandStack.removeLast())
+            self.enter()
         }
     }
-    
-    var operandStack = Array<Double>()
     
     @IBAction func enter() {
-        userInTheMiddleOfTypingANumber = false
-        operandStack.append(displayValue)
-        println("operandStack = \(operandStack)")
-    }
-    
-    var displayValue: Double {
-        get {
-            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
-        }
-        set {
-            display.text = "\(newValue)"
-            userInTheMiddleOfTypingANumber = false
-        }
+        self.userInTheMiddleOfTypingANumber = false
+        self.operandStack.append(self.displayValue)
+        println("operandStack = \(self.operandStack)")
     }
 }
 
