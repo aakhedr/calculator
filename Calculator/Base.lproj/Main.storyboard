@@ -221,7 +221,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMU-re-oNS"/>
+                                    <action selector="appendDecimalPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XaA-OL-5hQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,7 +231,9 @@
                             <constraint firstItem="DHZ-di-FKi" firstAttribute="height" secondItem="ydy-k6-H9k" secondAttribute="height" id="0KI-r2-LeG"/>
                             <constraint firstItem="D3S-Cz-Djd" firstAttribute="leading" secondItem="nZN-fc-RdO" secondAttribute="trailing" constant="8" id="0Rb-Jw-mPr"/>
                             <constraint firstItem="1Rv-t9-V3D" firstAttribute="top" secondItem="DrP-zn-igU" secondAttribute="bottom" constant="8" id="0lf-oZ-FZy"/>
-                            <constraint firstItem="DrP-zn-igU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3pm-5Y-noV"/>
+                            <constraint firstItem="DrP-zn-igU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3pm-5Y-noV">
+                                <variation key="widthClass=compact" constant="224"/>
+                            </constraint>
                             <constraint firstItem="ydy-k6-H9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="4kN-6A-uug"/>
                             <constraint firstItem="pEQ-K9-lqA" firstAttribute="leading" secondItem="DHZ-di-FKi" secondAttribute="trailing" constant="8" id="6sv-Mm-FK6"/>
                             <constraint firstItem="DHZ-di-FKi" firstAttribute="width" secondItem="pEQ-K9-lqA" secondAttribute="width" id="7YZ-VS-86P"/>

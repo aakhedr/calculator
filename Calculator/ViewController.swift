@@ -11,15 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
-
     var userInTheMiddleOfTypingANumber = false
     var displayValue: Double {
         get {
-            return NSNumberFormatter().numberFromString(self.display.text!)!.doubleValue
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
         }
         set {
-            self.display.text = "\(newValue)"
-            self.userInTheMiddleOfTypingANumber = false
+            display.text = "\(newValue)"
+            userInTheMiddleOfTypingANumber = false
         }
     }
     
@@ -27,20 +26,27 @@ class ViewController: UIViewController {
     var brain = CalculatorBrain()
     
     @IBAction func appendDigit(sender: UIButton) {
-        if sender.currentTitle! != "." {
-            var digit = sender.currentTitle!
-            if self.userInTheMiddleOfTypingANumber {
-                self.display.text = self.display.text! + digit
+        if userInTheMiddleOfTypingANumber {
+            display.text = self.display.text! + sender.currentTitle!
+        } else {
+            display.text = sender.currentTitle!
+            userInTheMiddleOfTypingANumber = true
+        }
+    }
+
+    @IBAction func appendDecimalPoint(sender: UIButton) {
+        if (display.text!.rangeOfString(".") != nil) {
+            if userInTheMiddleOfTypingANumber {
+                // Add some text to the display here!
+                println("Number already contains a decimal point")
             } else {
-                self.display.text = digit
-                self.userInTheMiddleOfTypingANumber = true
+                // User is typing a new number with decimal point
+                display.text = "\(0)" + "."
+                userInTheMiddleOfTypingANumber = true
             }
         } else {
-            var decimal = sender.currentTitle!
-            if self.display.text!.rangeOfString(".") == nil {
-                self.display.text = self.display.text! + decimal
-                self.userInTheMiddleOfTypingANumber = true
-            }
+            display.text = display.text! + "."
+            userInTheMiddleOfTypingANumber = true
         }
     }
 
