@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var history: UILabel!
+
     var userInTheMiddleOfTypingANumber = false
     var displayValue: Double {
         get {
@@ -21,36 +23,36 @@ class ViewController: UIViewController {
             userInTheMiddleOfTypingANumber = false
         }
     }
-    
+
     // The model
     var brain = CalculatorBrain()
     
     @IBAction func appendDigit(sender: UIButton) {
+        let digit = sender.currentTitle!
         if userInTheMiddleOfTypingANumber {
-            display.text = self.display.text! + sender.currentTitle!
+            display.text = self.display.text! + digit
         } else {
-            display.text = sender.currentTitle!
+            display.text = digit
             userInTheMiddleOfTypingANumber = true
         }
     }
 
     @IBAction func appendDecimalPoint(sender: UIButton) {
-        if (display.text!.rangeOfString(".") != nil) {
-            if userInTheMiddleOfTypingANumber {
+        let decimal = sender.currentTitle!
+        if userInTheMiddleOfTypingANumber {
+            if let decimal = display.text!.rangeOfString(decimal) {
                 // Add some text to the display here!
                 println("Number already contains a decimal point")
             } else {
-                // User is typing a new number with decimal point
-                display.text = "\(0)" + "."
-                userInTheMiddleOfTypingANumber = true
+                display.text = display.text! + decimal
             }
         } else {
-            display.text = display.text! + "."
+            display.text = "\(0)" + decimal
             userInTheMiddleOfTypingANumber = true
         }
     }
 
-    @IBAction func oeprate(sender: UIButton) {
+    @IBAction func operate(sender: UIButton) {
         if userInTheMiddleOfTypingANumber {
             enter()
         }
@@ -67,13 +69,15 @@ class ViewController: UIViewController {
     @IBAction func enter() {
         self.userInTheMiddleOfTypingANumber = false
         if let result = brain.pushOperand(displayValue) {
-            self.displayValue = result
+            displayValue = result
         } else {
             // This needs to be modifed later in exercise 2
-            self.displayValue = 0
+            displayValue = 0
         }
     }
+    
+    @IBAction func clear(sender: UIButton) {
+        brain.clear()
+        display.text = "\(0)"
+    }
 }
-
-
-
